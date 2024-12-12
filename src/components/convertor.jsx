@@ -138,6 +138,7 @@ const CurrencyConverter = () => {
                                 <p className="text-xl font-semibold">10000 {baseCurrency}</p>
                             </div>
                             <div className="target">
+<<<<<<< HEAD
                                 <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{finalrate.toFixed(0)}</p>
                                 <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{5 *  finalrate.toFixed(0)}</p>
                                 <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{10 * finalrate.toFixed(0)}</p>
@@ -148,6 +149,18 @@ const CurrencyConverter = () => {
                                 <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{1000 * finalrate.toFixed(0)}</p>
                                 <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{5000 * finalrate.toFixed(0)}</p>
                                 <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{10000 * finalrate.toFixed(0)}</p>
+=======
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{converted.toFixed(2)}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{5 *  convertedAmount.toFixed(2)}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{10 * convertedAmount.toFixed(2)}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{20 * convertedAmount.toFixed(2)}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{50 * convertedAmount.toFixed(2)}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{100 * convertedAmount.toFixed(2)}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{500 * convertedAmount.toFixed(2)}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{1000 * convertedAmount.toFixed(2)}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{5000 * convertedAmount.toFixed(2)}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{10000 * convertedAmount.toFixed(2)}</p>
+>>>>>>> 6ba3ffd66d31c60987604301c2e0f5836470c258
 
                             </div>
                         </div>
