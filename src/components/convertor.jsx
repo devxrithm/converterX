@@ -34,7 +34,8 @@ const CurrencyConverter = () => {
         fetchData();
     }, []);
 
-    const finalrate = rates[targetCurrency];
+    const finalratewithdecimal = rates[targetCurrency];
+    const finalrate = Math.round(finalratewithdecimal * 1000) / 1000
 
     const convertCurrency = () => {
         const rate = rates[targetCurrency] / rates[baseCurrency];
@@ -138,16 +139,16 @@ const CurrencyConverter = () => {
                                 <p className="text-xl font-semibold">10000 {baseCurrency}</p>
                             </div>
                             <div className="target">
-                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{finalrate.toFixed(3)}</p>
-                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{5 *  finalrate.toFixed(3)}</p>
-                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{10 * finalrate.toFixed(3)}</p>
-                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{20 * finalrate.toFixed(3)}</p>
-                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{50 * finalrate.toFixed(3)}</p>
-                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{100 * finalrate.toFixed(3)}</p>
-                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{500 * finalrate.toFixed(3)}</p>
-                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{1000 * finalrate.toFixed(3)}</p>
-                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{5000 * finalrate.toFixed(3)}</p>
-                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{10000 * finalrate.toFixed(3)}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{finalrate}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{5 * finalrate}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{10 * finalrate}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{20 * finalrate}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{50 * finalrate}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{100 * finalrate}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{500 * finalrate}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{1000 * finalrate}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{5000 * finalrate}</p>
+                                <p className="text-xl font-medium flex items-center"> <FaArrowRightLong />&nbsp; &nbsp;{10000 * finalrate}</p>
 
                             </div>
                         </div>
